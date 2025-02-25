@@ -1,0 +1,123 @@
+/* Selector + propiedad + valor 
+selector {
+    propiedad: valor;
+    propiedad: valor;
+}
+*/
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* nos va a permitir utilizar un modelo de caja especifico (en este caso border-box) */
+}
+
+p {
+    /* nombre color, hexadecimal, rgb y rgba */
+    /*color: blue;
+    color: #454545;
+    color: rgb(0, 1, 255);*/
+    color: rgba(0, 0, blue,255,0.5);
+    font-size: 30px;
+    margin: 20px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+/*
+body {
+    background-color: rgb(124, 218, 81);
+}*/
+
+
+/* Aplicamos estilos al elemento PADRE */
+section {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Aplicamos estilos al elemento HIJO (h2)*/
+section h2 {
+    color: red;
+    font-size: 24px;
+}
+
+/* Aplicamos estilos al elemento HIJO (p)*/
+section p {
+    font-size: 16px;
+}
+
+div {
+    color: green;
+}
+
+div span {
+    color: green;
+}
+
+span {
+    color: red;
+}
+
+.titulo-servicios {
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+    font-size: 24px; /*unidad de medida ABSOLUTA*/
+    font-family: "Nunito", serif; /* esto me lo da Google Fonts */
+}
+
+.parrafo-servicios {
+    text-transform: capitalize;
+    text-align: justify;
+    color: grey;
+    font-style: italic;
+    font-size: 1.5em; /*unidad de medida RELATIVA (es relativo al tamaño de fuente del elemento PADRE)*/
+    font-weight: bold; /*cambio el peso*/
+    font-family: cursive;
+}
+
+/*
+    Si utilizara la unida de medida rem -> esta es relativo al tamaños de la fuente del elemento raiz,
+    por lo general se refiere a todo el HTML
+
+    Es por eso que se utilizan px en texto y % en tamaño ya que estas unidades son un poco dificiles 
+    de entender
+*/
+
+.content-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    padding: 20px;
+    border: 5px solid black;  /* 3. Ejemplo de border */
+    margin: 30px; /* 4. Ejemplo de margin */
+}
+
+.caja {
+    background-color: pink;
+    /*width: 200px; */
+    width: 50%; /*otra manera de definir el ancho*/
+    height: 100px;
+    border: 5px solid lightblue;
+    text-align: center;
+    line-height: 95px; /*Alto de la linea (para tratar de centrarlo horizontalmente)*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
